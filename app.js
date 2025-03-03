@@ -4,8 +4,10 @@ let amigos = [];
 function adicionarAmigo() {
     let amigo = document.getElementById('amigo').value;
     amigos.push(amigo);
-    
+    amigo = '';
+
     let ul = document.getElementById('listaAmigos');
+    ul.innerHTML = "";
     for (let i = 0; i < amigos.length; i++) {
         let li = document.createElement('li');
         li.innerHTML = amigos[i];
@@ -14,5 +16,5 @@ function adicionarAmigo() {
 }
 
 function sortearAmigo() {
-    amigos
+    //let amigo = 
 }
